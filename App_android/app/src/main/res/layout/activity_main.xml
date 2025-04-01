@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/border_textview"
+        android:text="THÔNG TIN SINH VIÊN"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:shadowColor="@color/pink"
+        android:padding="10dp"/>
+
+    <!-- Input Name -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Họ tên: "
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/InputName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="30"
+            android:inputType="text"
+            android:textSize="25sp" />
+    </TableRow>
+
+    <!-- Input B -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/MSSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Mssv: "
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/InputMSSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="number"
+            android:textSize="25sp" />
+    </TableRow>
+    <!-- Input C -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/Class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Lớp: "
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/InputClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="text"
+            android:textSize="25sp" />
+    </TableRow>
+    <!-- Input D -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TextSDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="SĐT: "
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/InputSDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="number"
+            android:textSize="25sp" />
+    </TableRow>
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:background="@color/pink"
+        android:text="Sinh viên năm:"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textSize="25sp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/Btn1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Năm 1"
+            android:textSize="17sp"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/Btn2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Năm 2"
+            android:textSize="17sp"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/Btn3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Năm 3"
+            android:textSize="17sp"
+            android:gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/Btn4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Năm 4"
+            android:textSize="17sp"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/Text3"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:background="@color/pink"
+        android:text="Chuyên ngành:"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <!-- Dòng Tiêu Đề -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="MT-HTN"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Điện tử"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Mang - VT"
+            android:gravity="center" />
+    </TableRow>
+
+    <!-- Dòng CheckBox + Ký Hiệu -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/CheckBox1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/CheckBox3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </TableRow>
+    <TextView
+        android:id="@+id/Text4"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:text="Định hướng phát triển bản thân:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/InputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="50"
+        android:inputType="text"
+        android:textSize="28sp" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/BtnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple"
+            android:text="OK"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnCall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:layout_weight="1"
+            android:text="Call"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnSMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple"
+            android:layout_weight="1"
+            android:text="SMS"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/BtnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple"
+        android:textSize="25sp" />
+
+
+</LinearLayout>

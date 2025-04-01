@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/purple"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/border_textview"
+        android:text="THÔNG TIN SINH VIÊN"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:shadowColor="@color/pink"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        android:text="Thông tin vừa nhập:" />
+
+    <Button
+        android:id="@+id/BtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Back"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/purple"
+        android:textSize="30sp" />
+
+
+</LinearLayout>
