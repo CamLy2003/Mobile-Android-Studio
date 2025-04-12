@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/bg_second">
+
+    <ImageView
+        android:id="@+id/quiz_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/clock"
+        android:contentDescription="Quiz Icon" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIZ APP"
+        android:textColor="#00C853"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/take_quiz_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Quiz"
+        android:backgroundTint="#00C853"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/facebook_login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="f   Login"
+            android:backgroundTint="#3b5998"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/google_login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="g+   Login"
+            android:backgroundTint="#DB4437"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
