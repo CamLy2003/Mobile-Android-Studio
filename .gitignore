@@ -1,0 +1,22 @@
+# Các tệp cấu hình Firebase
+google-services.json
+
+# Các thư mục biên dịch
+/build/
+/out/
+
+# Các thư mục của IDE
+.idea/
+.project
+.classpath
+.settings/
+.vscode/
+
+# Các tệp log và tạm
+*.log
+*.tmp
+*.bak
+
+# Các tệp của hệ điều hành
+.DS_Store
+Thumbs.db
