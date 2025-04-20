@@ -59,9 +59,9 @@ Buttons: Action buttons are styled with icons and rounded corners for modern UI/
 Responsiveness: Layout is responsive across screen sizes using ConstraintLayout or nested LinearLayouts
 
 <div style="display: flex; justify-content: space-around;">
-  <img src="https://github.com/user-attachments/assets/edfb5ab0-2e32-48e6-8d02-7318c4c73eb4" alt="Weather App" width="300" height="600"/>
-  <img src="https://github.com/user-attachments/assets/f219b5cf-9dd2-4ea6-b45f-db966b27482f" alt="Quiz App" width="300" height="600"/>
-  <img src="https://github.com/user-attachments/assets/0b7a56b2-2466-4eda-9257-02e0d05e2a37" alt="Computer Quiz App" width="300" height="600"/>
+  <img src="https://github.com/user-attachments/assets/edfb5ab0-2e32-48e6-8d02-7318c4c73eb4" alt="Weather App" width="200" height="500"/>
+  <img src="https://github.com/user-attachments/assets/f219b5cf-9dd2-4ea6-b45f-db966b27482f" alt="Quiz App" width="200" height="500"/>
+  <img src="https://github.com/user-attachments/assets/0b7a56b2-2466-4eda-9257-02e0d05e2a37" alt="Computer Quiz App" width="200" height="500"/>
 </div>
 
 
