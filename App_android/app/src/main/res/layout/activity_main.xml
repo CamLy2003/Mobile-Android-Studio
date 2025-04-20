@@ -1,19 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/frameLayout"
+    android:background="@drawable/sky"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
+    <!-- Icon trung tâm -->
+    <LinearLayout
+        android:id="@+id/layout_center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/center_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/weather" />
+
+        <TextView
+            android:id="@+id/text_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weather"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Mỗi icon bao quanh là 1 LinearLayout chứa ImageView + TextView -->
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_top"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/rainbow" />
+
+        <TextView
+            android:id="@+id/text_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rainbow"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_top_right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/sunlight" />
+
+        <TextView
+            android:id="@+id/text_top_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunlight"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/starry_night" />
+
+        <TextView
+            android:id="@+id/text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starry"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_bottom_right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/sunrise" />
+
+        <TextView
+            android:id="@+id/text_bottom_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun Rise"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_bottom"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/temperature_cold" />
+
+        <TextView
+            android:id="@+id/text_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cold"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_bottom_left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/tornado" />
+
+        <TextView
+            android:id="@+id/text_bottom_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tornado"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/cloudy_cloud_rain" />
+
+        <TextView
+            android:id="@+id/text_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloudy"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_top_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon_top_left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/hail" />
+
+        <TextView
+            android:id="@+id/text_top_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hail"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</FrameLayout>
