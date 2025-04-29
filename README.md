@@ -30,3 +30,34 @@ This assignment involved creating an Android application to display a list of fr
 |:--:|:--:|
 | Screen 1 | Screen 2 |
 
+# 2. List type of Social Media
+
+## Description
+This Android application displays a list of social media platforms along with icons, names, and the year since they were founded. It uses a ListView and SimpleAdapter to bind the data to the view, creating a simple yet effective interface for displaying social media information. The list includes the following platforms: Facebook, Instagram, Twitter, Telegram, LinkedIn, and Email, each accompanied by its corresponding logo and founding year.
+
+## Features
+- Icon Display: Each social media platform is represented by its icon.
+- Text Information: The name of the social media platform and the year it was founded are displayed alongside the icons.
+- Dynamic List: The list is populated dynamically using an array of data, making it easy to update with additional social media platforms in the future.
+- Interactive Layout: The layout uses a LinearLayout to organize the image and text elements horizontally, and another nested LinearLayout for text details vertically.
+
+## Methodology
+1. Data Representation:
+- Arrays icons, names, and since represent the icons, names, and founding years of social media platforms.
+- The icons are stored as resource IDs (R.drawable), while names and founding years are stored as strings.
+
+2. Adapter Setup:
+- A SimpleAdapter is used to bind the data to the ListView.
+- A HashMap is created for each item to hold the icon, title, and "since" information.
+- SimpleAdapter is configured with a custom layout (activity_second.xml) that specifies how the data should be displayed.
+
+3. UI Layout:
+- The layout for each item in the list is defined using a LinearLayout with a horizontal orientation. This layout contains an ImageView for the icon and a nested LinearLayout for the title and founding year.
+- View Binding:
+- The SimpleAdapter binds the data to the respective views in the layout using the keys "icon", "title", and "since", which correspond to the ImageView and TextViews in the layout.
+
+4. Activity Setup:
+- The onCreate() method initializes the ListView, populates the data, and sets the adapter to display the list of social media platforms.
+
+![image](https://github.com/user-attachments/assets/fa19eadf-68dc-49a3-b177-ab2837f66861)
+
