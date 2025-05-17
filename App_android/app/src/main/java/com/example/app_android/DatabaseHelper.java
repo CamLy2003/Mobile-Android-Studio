@@ -37,7 +37,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    // ✅ Hàm kiểm tra sinh viên đã tồn tại hay chưa
+    // Hàm kiểm tra sinh viên đã tồn tại hay chưa
     public boolean isStudentExists(String id) {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT 1 FROM " + TABLE_NAME + " WHERE " + COLUMN_ID + " = ?", new String[]{id});
@@ -46,7 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return exists;
     }
 
-    // ✅ Chỉ insert nếu chưa tồn tại
+    // Chỉ insert nếu chưa tồn tại
     public void insertStudent(String id, String name, int imageRes) {
         if (isStudentExists(id)) return; // Nếu đã có, không insert nữa
 

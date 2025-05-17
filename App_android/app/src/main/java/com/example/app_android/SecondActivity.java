@@ -23,17 +23,15 @@ public class SecondActivity extends Activity {
         ListView listView = new ListView(this);
         DatabaseHelper dbHelper = new DatabaseHelper(this);
 
-        // Lấy dữ liệu từ DB
-        ArrayList<HashMap<String, Object>> list = dbHelper.getAllStudents();
-
+        // ✅ 1. Chèn dữ liệu mẫu nếu chưa có
         for (int i = 0; i < names.length; i++) {
-            HashMap<String, Object> item = new HashMap<>();
-            item.put("photo", photos[i]);
-            item.put("name", names[i]);
-            item.put("studentId", studentIds[i]);
-            list.add(item);
+            dbHelper.insertStudent(studentIds[i], names[i], photos[i]);
         }
 
+        // ✅ 2. Lấy toàn bộ dữ liệu từ database
+        ArrayList<HashMap<String, Object>> list = dbHelper.getAllStudents();
+
+        // ✅ 3. Tạo adapter hiển thị danh sách
         SimpleAdapter adapter = new SimpleAdapter(
                 this,
                 list,
@@ -45,13 +43,13 @@ public class SecondActivity extends Activity {
         listView.setAdapter(adapter);
         setContentView(listView);
 
-        // Gửi dữ liệu qua DetailActivity
+        // ✅ 4. Khi click vào item → mở info_student
         listView.setOnItemClickListener((parent, view, position, id) -> {
-            dbHelper.insertStudent(studentIds[position], names[position], photos[position]);
+            HashMap<String, Object> student = list.get(position);
             Intent intent = new Intent(SecondActivity.this, info_student.class);
-            intent.putExtra("image", photos[position]);
-            intent.putExtra("name", names[position]);
-            intent.putExtra("studentId", studentIds[position]);
+            intent.putExtra("image", (int) student.get("photo"));
+            intent.putExtra("name", (String) student.get("name"));
+            intent.putExtra("studentId", (String) student.get("studentId"));
             startActivity(intent);
         });
     }
