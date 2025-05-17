@@ -7,22 +7,22 @@ Weekly Report on Android Studio Programming at University. This is a **practical
 
 ## Weekly Assignments
 
-Here are the links to the weekly assignments:
+# 1. Student ListView App
 
-| Week 1 | Week 2 | Week 3 |
-|--------|--------|--------|
-| [TH-Week1](https://github.com/CamLy2003/Mobile-Android-Studio/tree/TH-Week1) | [TH-Week2](https://github.com/CamLy2003/Mobile-Android-Studio/tree/TH_Week2) | [TH-Week3](https://github.com/CamLy2003/Mobile-Android-Studio/tree/TH_Week3) |
+## Description  
+This project is a **Student ListView App** that displays student information in a custom `ListView`. Each item in the list shows an avatar, full name, and student ID (MSSV). When a student item is double-clicked, the app opens a detailed view of that student. All student data is stored locally using **SQLite**.
 
-These links will lead you to the respective GitHub repositories for each week's task and project. Click on them to view the completed assignments and relevant files for each week.
+## Features  
+- Custom `ListView` displaying:
+  - Avatar (`ImageView`)
+  - Full name (`TextView`)
+  - Student ID - MSSV (`TextView`)
+- **Double-click** interaction to view detailed student information.
+- Data is **persistently stored** using `SQLite` database.
+- Simple, clean UI optimized for readability and interaction.
 
-## Description
-
-This repository contains the weekly reports and projects for the **Mobile Android Studio** course. Each week focuses on learning new concepts and building practical skills in Android development.
-
-## Installation
-
-To clone the repository and access the files:
-
-```bash
-git clone https://github.com/CamLy2003/Mobile-Android-Studio.git
-
+## Methodology  
+- **Layout:** Designed a custom layout XML for each list item containing an `ImageView` for the avatar and two `TextView` elements for name and MSSV. Used `ListView` in the main layout to show the full list.
+- **Database:** Implemented local storage using `SQLite`. Created a database with fields for avatar (image path or URI), name, and MSSV. Used `SQLiteOpenHelper` for database operations.
+- **Adapter:** Built a custom adapter to bind database records to the `ListView`, displaying all student data in a clean format.
+- **Interaction:** Implemented double-click detection on list items. On double-click, the app uses `Intent` to navigate to a new `Activity`, which shows detailed student information.
